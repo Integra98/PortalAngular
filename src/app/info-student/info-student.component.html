@@ -1,0 +1,24 @@
+<h2><span style='padding-left:30px;'> </span>{{selStudent.name | uppercase}} Детали</h2>
+<button [routerLink]="['/edit-student',selStudent.id]">Редактировать</button>
+<button routerLink="/students" (click)="deleteStudent(selStudent.id)">Удалить</button>
+    <table>
+        <tr>
+            <td>ID:</td><td> {{selStudent.id}}</td>
+          </tr>
+      <tr>
+        <td>Имя:</td><td> {{selStudent.name}}</td>
+      </tr>
+      <tr>
+        <td>Пол:</td><td> {{selStudent.sex}}</td>
+      </tr>
+      <tr>
+          <td>Вид обучения:</td><td> {{selStudent.type}}</td>
+      </tr>
+      <tr>
+          <td>Курс:</td><td> {{selStudent.cours}}</td>
+      </tr>
+      <tr>
+          <td>GPA:</td><td> {{selStudent.gpa}}</td>
+        </tr>
+    </table>
+    <button (click)="backClicked()">ОК</button>

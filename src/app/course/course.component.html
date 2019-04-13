@@ -1,0 +1,10 @@
+<h2><span style='padding-left:30px;'> </span>Курсы</h2>
+<button style='margin-left:30px;' routerLink="/add-course">Добавить курс</button>
+<ul class="courses">
+  <li *ngFor="let c of courses"
+    [class.selected]="c === selectedCourse"
+    (click)="onSelect(c)" [routerLink]="['/info-course',c.id]">
+    <span class="badge">{{c.id}}</span> {{c.name}}
+  </li>
+</ul>
+<router-outlet></router-outlet>

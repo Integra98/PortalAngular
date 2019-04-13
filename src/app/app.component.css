@@ -1,0 +1,28 @@
+.header{
+	background:black;
+	padding:20px;
+	color:#86AC41;
+	font-size:35px;
+	font-family:fantasy;
+}
+.menubut{
+    width: 100%;
+    padding: 25px;
+    background-color:#cdcdcd;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+	font-family: fantasy;
+    }
+
+.menubut:hover{
+    background-color: black;
+    color: #cdcdcd;
+    }
+
+.img{
+    width:1025px; 
+    height:500px;
+}
